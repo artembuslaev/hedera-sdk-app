@@ -12,7 +12,8 @@ jobs:
     - uses: actions/checkout@v2       
     - uses: actions/setup-node@master
       with:
-        node-version: 14
+        node-version: 16
+        always-auth: true
     - name: install dependencies
       run: npm install
     - name: publish
@@ -26,7 +27,8 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@master
       with:
-        node-version: 14
+        node-version: 16
+        always-auth: true
     - name: install dependencies
       run: npm install
     - name: publish
@@ -40,7 +42,8 @@ jobs:
     - uses: actions/checkout@v2       
     - uses: actions/setup-node@master
       with:
-        node-version: 14
+        node-version: 16
+        always-auth: true
     - name: install dependencies
       run: npm install
     - name: publish
