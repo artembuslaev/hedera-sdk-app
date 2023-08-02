@@ -65,8 +65,8 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "name": "Electron starter",
-        "executableName": "electron-starter",
+        "name": "hedera-sdk-app",
+        "executableName": "hedera-sdk-app",
         "icon": "assets/icon",
         "extraResource": [
           "assets"
@@ -97,7 +97,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "Electron Starter"
+            "name": "hedera-sdk-app"
           }
         },
         {
