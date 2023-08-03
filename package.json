@@ -124,7 +124,8 @@
             "repository": {
               "owner": "artembuslaev",
               "name": "hedera-sdk-app"
-            }
+            },
+            "draft": false
           }
         }
       ]
