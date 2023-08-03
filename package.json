@@ -1,7 +1,7 @@
 {
   "name": "hedera-sdk-app",
   "author": "Artem Buslaev",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Electron boilerplate including TypeScript, React, Jest and ESLint.",
   "main": "./.webpack/main/index.js",
   "scripts": {
@@ -125,7 +125,7 @@
               "owner": "artembuslaev",
               "name": "hedera-sdk-app"
             },
-            "draft": true
+            "draft": false
           }
         }
       ]

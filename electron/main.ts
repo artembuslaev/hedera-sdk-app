@@ -1,5 +1,7 @@
 import { app, BrowserWindow, ipcMain } from 'electron'
 
+if (require('electron-squirrel-startup') === true) app.quit();
+
 let mainWindow: BrowserWindow | null
 
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string
