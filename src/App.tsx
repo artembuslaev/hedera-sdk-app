@@ -1,12 +1,25 @@
-import { GlobalStyle } from './styles/GlobalStyle'
+import React, { useRef } from 'react';
+import './App.css';
+import { AccountInput } from './components/AccountInput/AccountInput';
+import { TestSuites } from './components/TestSuites/TestSuites';
+import { GlobalStyle } from './styles/GlobalStyle';
 
-import { Greetings } from './components/Greetings'
-
-export function App() {
+function App() {
+  const testSuites = useRef<any>();
+  const callTests = (accountId: any, key: any) => {
+    return function () {
+      if (testSuites.current) {
+        testSuites.current.callTests(accountId, key);
+      }
+    }    
+  }
   return (
-    <>
-      <GlobalStyle />
-      <Greetings />
-    </>
-  )
+    <div className="App">
+      <GlobalStyle></GlobalStyle>
+      <AccountInput callTests={callTests}></AccountInput>
+      <TestSuites ref={testSuites}></TestSuites>
+    </div>
+  );
 }
+
+export default App;

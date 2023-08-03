@@ -1,0 +1,83 @@
+.account-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #464646;
+    z-index: 0;
+  }
+  
+  .account-form .hedera-logo {
+    width: 200px;
+  }
+
+  
+.account-form-group {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .account-form-input {
+    box-sizing: border-box;
+    padding: 0 0 15px 30px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+    color: white;
+  }
+  
+  .account-form-label {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    z-index: -1;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .account-form-input:focus ~ .account-form-label,
+  .account-form-input:not(:placeholder-shown) ~ .account-form-label {
+    top: -18px;
+    left: 20px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .account-form-icon {
+    color: white;
+    width: 25px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+  }
+  
+  
+  .start-test-btn {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
