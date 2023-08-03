@@ -125,7 +125,7 @@
               "owner": "artembuslaev",
               "name": "hedera-sdk-app"
             },
-            "draft": false
+            "draft": true
           }
         }
       ]
