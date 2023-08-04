@@ -1,0 +1,1 @@
+export hederaLogo from './hedera-logo.png';

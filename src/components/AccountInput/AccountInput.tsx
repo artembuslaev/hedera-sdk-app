@@ -6,8 +6,8 @@ import acc from '../../../assets/account.svg'
 import pass from '../../../assets/pass.svg'
 
 export function AccountInput(props: any) {
-  const [account, setAccount] = useState('')
-  const [key, setKey] = useState('')
+  // const [account, setAccount] = useState('')
+  // const [key, setKey] = useState('')
 
   return (
     <form className="account-form">
@@ -18,8 +18,8 @@ export function AccountInput(props: any) {
           type="text"
           className="account-form-input"
           placeholder=" "
-          value={account}
-          onInput={(e: any) => setAccount(e.target.value)}
+          value={props.accountState[0]}
+          onInput={(e: any) => props.accountState[1](e.target.value)}
         ></input>
         <label className="account-form-label">Account Identifier</label>
       </div>
@@ -29,18 +29,18 @@ export function AccountInput(props: any) {
           type="password"
           className="account-form-input"
           placeholder=" "
-          value={key}
-          onInput={(e: any) => setKey(e.target.value)}
+          value={props.keyState[0]}
+          onInput={(e: any) => props.keyState[1](e.target.value)}
         ></input>
         <label className="account-form-label">Account Private Key</label>
       </div>
-      <button
+      {/* <button
         type="button"
         className="start-test-btn"
         onClick={props.callTests(account, key)}
       >
         Start Tests
-      </button>
+      </button> */}
     </form>
   )
 }

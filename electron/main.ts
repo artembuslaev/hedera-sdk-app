@@ -35,7 +35,7 @@ async function registerListeners () {
   /**
    * This comes from bridge integration, check bridge.ts
    */
-  ipcMain.on('message', (_, message) => {
+  ipcMain.on('deploy', (_, message) => {
     console.log(message)
   })
 }
